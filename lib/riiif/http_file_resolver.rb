@@ -69,8 +69,8 @@ module Riiif
                   local.write(chunk)
                 end
               end
-            rescue OpenURI::HTTPError => e
-              raise ImageNotFoundError.new(e)
+            # rescue OpenURI::HTTPError => e
+            #   raise ImageNotFoundError.new(e)
             end
           end
         end
